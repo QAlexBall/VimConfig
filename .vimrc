@@ -26,7 +26,7 @@ let g:pymode_rope_lookup_project = 0
 " 2017
 "config NERDTree
 " 在 vim 启动的时候默认开启 NERDTree（autocmd 可以缩写为 au）
-" autocmd VimEnter * NERDTree
+autocmd VimEnter * NERDTree
 " 当打开 NERDTree 窗口时，自动显示 Bookmarks
 let NERDTreeShowBookmarks=1
 nmap <F5> :NERDTreeToggle<cr>
@@ -36,7 +36,8 @@ syntax enable
 "colorscheme
 set background=dark
 colorscheme gruvbox
-" let g:solarized_termcolors=256
+"let g:solarized_termcolors=256
+" colorscheme molokai
 " colorscheme solarized
 " colorscheme darkblue
 " colorscheme phd
@@ -48,9 +49,9 @@ set completeopt=longest,menu	"让Vim的补全菜单行为与一般IDE一致
 " 菜单
 " highlight Pmenu ctermfg=2 ctermbg=3 guifg=#00000 guibg=#000000
 " 选中项
-"highlight PmenuSel ctermfg=2 ctermbg=3 guifg=#AFD700 guibg=#106900
-let g:ycm_server_python_interpreter='/usr/bin/python'
-let g:ycm_global_ycm_extra_conf='~/.vim/.ycm_extra_conf.py'
+" highlight PmenuSel ctermfg=2 ctermbg=3 guifg=#AFD700 guibg=#106900
+let g:ycm_server_python_interpreter='/usr/bin/python3'
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/examples/.ycm_extra_conf.py'
 " 开启 YCM 标签引擎
 let g:ycm_collect_identifiers_from_tags_files=1
 " 引入 C++ 标准库tags
@@ -90,8 +91,8 @@ let g:ycm_collect_identifiers_from_tag_files = 1
 
 
 "PowerLine
-let g:Powerline_colorscheme='solarized256'
-let g:PowerLine_symbols='fancy'
+let g:Powerline_colorscheme='solarized'
+let g:PowerLine_symbols='fansy'
 
 " 高亮显示
 set cursorline
@@ -116,7 +117,7 @@ let tagbar_right=1
 " 设置显示／隐藏标签列表子窗口的快捷键。速记：identifier list by tag
 nmap <F8> :TagbarToggle<CR>
 " 设置标签子窗口的宽度 
-let tagbar_width=24
+let tagbar_width=28
 " tagbar 子窗口中不显示冗余帮助信息 
 let g:tagbar_compact=1
 
