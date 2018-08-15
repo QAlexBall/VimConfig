@@ -117,7 +117,7 @@ let tagbar_right=1
 " 设置显示／隐藏标签列表子窗口的快捷键。速记：identifier list by tag
 nmap <F8> :TagbarToggle<CR>
 " 设置标签子窗口的宽度 
-let tagbar_width=28
+let tagbar_width=32
 " tagbar 子窗口中不显示冗余帮助信息 
 let g:tagbar_compact=1
 
